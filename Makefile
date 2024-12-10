@@ -3,7 +3,7 @@ CXX = g++
 
 CXXFLAGS= -std=c++20 -Werror -Wall -Wextra
 
-SRC = main.cpp utils/utils.cpp
+SRC = main.cpp utils/utils.cpp Day_one/dayOne.cpp
 OBJ = $(SRC:.cpp=.o)
 
 #Executable target

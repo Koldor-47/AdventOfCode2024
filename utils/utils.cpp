@@ -9,7 +9,6 @@ std::vector<std::string> read_data_txt(std::string filePath){
     if (openFile.good()) {
         while (std::getline(openFile, line)) {
             the_data.push_back(line);
-            std::cout << line << std::endl;
         }
         openFile.close();
     } else {
