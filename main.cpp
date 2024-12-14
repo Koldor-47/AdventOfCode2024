@@ -4,6 +4,7 @@
 
 #include "utils/utils.h"
 #include "Day_one/dayOne.h"
+#include "Day_one/Part_b.h"
 
 int main(int, char**) {
     std::cout << "Advent of Code 2024" << std::endl;
@@ -18,6 +19,12 @@ int main(int, char**) {
 
     std::cout << day_one_a << std::endl;
 
+
+    std::unordered_map<int, int> test_me_too = build_location_count(day_one_data["right_list"]);
+
+    int day_one_b = part_b(day_one_data["left_list"], test_me_too);
+
+    std::cout << "Part B: " << day_one_b << std::endl;
 
     return 0;
 }
